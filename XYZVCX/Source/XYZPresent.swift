@@ -24,7 +24,7 @@ public extension UIViewController {
         }
     }
     
-    func 配置NavigationController的透明效果()  {
+    public func 配置NavigationController的透明效果()  {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white,NSAttributedString.Key.font:UIFont(name: "Avenir Next", size: 40.0)!]
