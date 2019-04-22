@@ -11,11 +11,11 @@ import Async
 
 
 public extension UIViewController {
-    public func Dis()  {
+      func Dis()  {
         dismiss(animated: true, completion: nil)
     }
     
-    public func PresentVC(With id:String){//},On VC:UIViewController) {
+      func PresentVC(With id:String){//},On VC:UIViewController) {
         let NAV =
             UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: id)
         
@@ -24,20 +24,35 @@ public extension UIViewController {
         }
     }
     
-    public func 配置NavigationController的透明效果()  {
+      func 配置NavigationController的透明效果()  {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white,NSAttributedString.Key.font:UIFont(name: "Avenir Next", size: 40.0)!]
         self.tabBarController?.tabBar.isHidden = true //不想要底边栏
     }
     
-    public func XPresent(VC:UIViewController,_ ID:String)  {
+      func XPresent(VC:UIViewController,_ ID:String)  {
         let x = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: ID)//"MusicTVCID")//"MusicNavID")
         x.modalTransitionStyle = .crossDissolve
         VC.present(x, animated: true, completion: nil)
     }
     
-    
+      func PresentVCBack(With id:String,completion: (() -> Void)? = nil ,BackVC:@escaping ((UIViewController?) -> Void))  {
+        
+        
+        let NAV =
+            UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: id)
+        BackVC(NAV)
+        Async.userInitiated {}.main {
+            self.present(NAV, animated: true, completion: {
+                if let completion = completion{
+                    completion()
+                }
+            })
+            
+            
+        }
+    }
     
 }
 
@@ -61,6 +76,8 @@ public func XYZKeyPresent(With id:String) {
         }
     }
 }
+
+
 //public class XYZPresent: NSObject {
 //
 //}
