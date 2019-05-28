@@ -7,22 +7,32 @@
 //
 
 import UIKit
-import Async
+//import Async
 
 
 public extension UIViewController {
       func Dis()  {
-        dismiss(animated: true, completion: nil)
-    }
-    
-      func PresentVC(With id:String){//},On VC:UIViewController) {
-        let NAV =
-            UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: id)
-        
-        Async.userInitiated {}.main {
-            self.present(NAV, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            self.dismiss(animated: true, completion: nil)
         }
     }
+    func PresentVC(With id:String,StoryboardName:String = "Main") {
+        
+        let NAV =
+            UIStoryboard(name: StoryboardName, bundle:nil).instantiateViewController(withIdentifier: id)
+        DispatchQueue.main.async {
+            self.present(NAV, animated: true, completion: nil)
+        }
+        
+    }
+//      func PresentVC(With id:String){//},On VC:UIViewController) {
+//        let NAV =
+//            UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: id)
+//
+//        Async.userInitiated {}.main {
+//            self.present(NAV, animated: true, completion: nil)
+//        }
+//    }
     
       func 配置NavigationController的透明效果()  {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
@@ -43,7 +53,7 @@ public extension UIViewController {
         let NAV =
             UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: id)
         BackVC(NAV)
-        Async.userInitiated {}.main {
+        DispatchQueue.main.async {
             self.present(NAV, animated: true, completion: {
                 if let completion = completion{
                     completion()
@@ -122,3 +132,28 @@ public func XYZKeyPresent(With id:String) {
 //            window?.rootViewController = x
 //            window?.makeKeyAndVisible()
 //x.modalTransitionStyle = .crossDissolve
+
+
+
+
+
+
+//customizeAppearance()
+//let tabController = window!.rootViewController as! UITabBarController
+//if let tabViewControllers = tabController.viewControllers {
+//    // First tab
+//    var navController = tabViewControllers[0] as! UINavigationController
+//    let controller1 = navController.viewControllers.first as! CurrentLocationViewController
+//    controller1.managedObjectContext = managedObjectContext
+//    // Second tab
+//    navController = tabViewControllers[1] as! UINavigationController
+//    let controller2 = navController.viewControllers.first as! LocationsViewController
+//    controller2.managedObjectContext = managedObjectContext
+//    let _ = controller2.view
+//    // Third tab
+//    navController = tabViewControllers[2] as! UINavigationController
+//    let controller3 = navController.viewControllers.first as! MapViewController
+//    controller3.managedObjectContext = managedObjectContext
+//}
+//print(applicationDocumentsDirectory)
+//listenForFatalCoreDataNotifications()
