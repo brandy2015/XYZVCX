@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XYZVCX"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "持续升级"
 
   # This description is used to generate tags and improve search results.
@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
   s.platform     = :ios, "10.1"
-  s.source       = { :git => "https://github.com/brandy2015/XYZVCX.git", :tag => "1.0.1"}
+  s.source       = { :git => "https://github.com/brandy2015/XYZVCX.git", :tag => "1.0.2"}
   s.source_files = "XYZVCX/Source/*"
 
     s.dependency 'AsyncSwift'

@@ -34,12 +34,9 @@ public extension UIViewController {
 //        }
 //    }
     
-      func 配置NavigationController的透明效果()  {
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white,NSAttributedString.Key.font:UIFont(name: "Avenir Next", size: 40.0)!]
-        self.tabBarController?.tabBar.isHidden = true //不想要底边栏
-    }
+     
+    
+    
     
       func XPresent(VC:UIViewController,_ ID:String)  {
         let x = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: ID)//"MusicTVCID")//"MusicNavID")
