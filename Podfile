@@ -8,4 +8,12 @@ target 'XYZVCX' do
   # Pods for XYZVCX
 	#同步异步
         pod 'AsyncSwift'
+        
+        
+        
+        #俄罗斯开发团队，从低部弹出动画
+        pod 'SPLarkController'
+        pod 'SPStorkController'
+        pod 'SPFakeBar'
+        
 end
