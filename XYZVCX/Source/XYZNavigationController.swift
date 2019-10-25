@@ -16,12 +16,10 @@ class XYZNavigationController: NSObject {
 //属性
 
 public extension UIViewController {
-    func Navc的透明效果(titleColor:UIColor = .white,字体大小:CGFloat = 25.0)  {
+    func Navc的透明效果(titleColor:UIColor = .white,font:UIFont = UIFont(name: "Avenir Next", size: 25.0)!)  {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:titleColor,NSAttributedString.Key.font:UIFont(name: "Avenir Next", size: 字体大小)!]
-        
-        //        Heiti SC
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:titleColor,NSAttributedString.Key.font:font]//        Heiti SC
         self.tabBarController?.tabBar.isHidden = true //不想要底边栏
     }
     

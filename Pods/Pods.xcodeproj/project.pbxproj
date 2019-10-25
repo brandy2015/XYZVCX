@@ -3,21 +3,80 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18E48A0DAF91D7AB10158FC4942E8D95 /* Pods-XYZVCX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7DC053891B24F8569F3084FD3A0BDA /* Pods-XYZVCX-dummy.m */; };
-		2CB8EA3B33C0E21470270AA0C66CC5C5 /* Pods-XYZVCX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D899FB0CB08CA39B7546ABC66C41E0 /* Pods-XYZVCX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		403005C6B713AB41381DC79F095560F0 /* AsyncSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AFE784340111366DBA79BD6A3A292C /* AsyncSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F821F787F54068BFB0BC00D454D6FD7 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451598E7E7FD12C0B3E72B2BB0893305 /* Async.swift */; };
-		8FE892FAEE3830CCEA20D863665D8A1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		F4D1A276A8BA1D67829949691F46004C /* AsyncSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B75A06F0F0D7203AF4EE2AB70B55FE8 /* AsyncSwift-dummy.m */; };
-		FE1811A6D9D0CCB02C28EBBCFC07D00A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		01239F8C2C0337789F3E04B4C34845BB /* SPLarkSettingsCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221566F96E5AAACE4A88B6510936B87F /* SPLarkSettingsCloseButton.swift */; };
+		01A2C09DD41BB4077FB0AC7933912043 /* SPStorkViewControllerExtenshion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6D5DE016810F17FE1AC74B1A8FE7E5 /* SPStorkViewControllerExtenshion.swift */; };
+		01DB7A898EF67554A612786E5ECBD220 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		10721F4FA7648F6414144E6388ACB07C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		27780860CD30FAF8DB73B15F9ADB8479 /* SPFakeBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEF81E883D90F848FD50EC527A76911 /* SPFakeBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FF935CD4355A28D02E99DC70B507E69 /* SPFakeBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A6150A6846B582B8053B90D78C353 /* SPFakeBarView.swift */; };
+		30A3BF6BB61092201215FF1874ED29E4 /* SPLarkController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C64DECB3C52AD2F791C2E355C5AB1FB /* SPLarkController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34F116F35A1DDF7133206046EFAA7BB7 /* SPStorkIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7708DFCC8ECEFD14720C064BF0B4BD /* SPStorkIndicatorView.swift */; };
+		529BBA2FDAFF23090D7D9D7F5AFED767 /* SPLarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C397169447FE9C689DBFDB0C708C7DA1 /* SPLarkController.swift */; };
+		538650345A53DA9C22A06B14EBC3354A /* SPStorkSeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1805077AB78D2BCBADD8A85F5818319 /* SPStorkSeque.swift */; };
+		58F0C306541B5F08526BB2B429057BA1 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C2979C507F0BF58C667F161D764D85 /* Async.swift */; };
+		62E66906171074C835FC5388B4C3179F /* AsyncSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 030A10EB802157589FC62D6D825EA195 /* AsyncSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73CB92A4E8818098AE7D8108D2A7921E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		77878A5F2CC1AF2C700E159A77BB39B1 /* SPStorkHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C758D5B38FBF75B38CFAC81F8CCBDD3F /* SPStorkHaptic.swift */; };
+		782D145D3D616835456F600CAE9B7AD2 /* SPLarkControllerExtenshion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D2140BA6FF2F196947663089B59387 /* SPLarkControllerExtenshion.swift */; };
+		786AE1A2DF986A4903519DA2307D4CEF /* AsyncSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84337C126A448FEE5DD868734A7E4279 /* AsyncSwift-dummy.m */; };
+		788CCCF5A049F7E8F7865DC6E5260DB2 /* SPLarkTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0627371BEC733CFE47664DA1E2A32B /* SPLarkTransitioningDelegate.swift */; };
+		848A0CED94965F6789ABA58B6807E63A /* Pods-XYZVCX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7DC053891B24F8569F3084FD3A0BDA /* Pods-XYZVCX-dummy.m */; };
+		8E05EC0AF7DD1173BE36F83037873158 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		940CDA53E5EF0C9F1E9B506B610EEE5B /* SPStorkPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A29AB7F08B8731EFF9BFF5A18F6925 /* SPStorkPresentationController.swift */; };
+		99C9A23D124ECE5CEEC3FD8597C4C0CF /* SPLarkSettingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02277522ADA8A31981F477D5095F17E /* SPLarkSettingsCollectionViewCell.swift */; };
+		9C869974B845471A239A4422A66DC838 /* Pods-XYZVCX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D899FB0CB08CA39B7546ABC66C41E0 /* Pods-XYZVCX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3D56AEB71F5D76AD5691FE23A770298 /* SPStorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D45052B7153900CBF84160541D329D /* SPStorkController.swift */; };
+		A52740E4DC6D8088E9DD1CCC07932058 /* SPLarkPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3013CAC99FAC9832328BE50788ADCA /* SPLarkPresentationController.swift */; };
+		AFE918354E105A305EE95C202806F49A /* SPStorkCloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84353FD9FE580F2E40E78EE70B9DA08 /* SPStorkCloseView.swift */; };
+		B1609F15EDA5CABE7C39C47EAB55A060 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		B1FFE5DC48CED21CF4CE8E020EA27CA7 /* SPStorkCodeDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BF02B76190D493667AEAD75D967D9D /* SPStorkCodeDraw.swift */; };
+		B2758B07E387D0B1E5F74B59AE075EFB /* SPLarkController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DFC6352B664386DA8FE266C84E5B1B /* SPLarkController-dummy.m */; };
+		B3417F6C24BF0035E66B0983E2655CA3 /* SPStorkController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F81D253FD4DDF8DFC373C73361DF434A /* SPStorkController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B721AA6B2FA2A5CE5E08BD612B295334 /* SPLarkSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C1202F1808E9D04B304B674C4B78FD /* SPLarkSettingsController.swift */; };
+		B922A66D7A6DC8CFA5A3799F6D1716F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		B9E482FD36C52333B4463F62A5956D90 /* SPStorkController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB28D6784066FA9039575ECB24AF3E1 /* SPStorkController-dummy.m */; };
+		C4F1D073AC3485B48744969DD7E5BE88 /* SPLarkDismissingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FE55B2F3D8A74B8A9422E0177657D9 /* SPLarkDismissingAnimationController.swift */; };
+		D156596331DC272C6D54D77F528E8AC8 /* SPFakeBarNavigationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000175314D8D929C2F4B64469F29F39 /* SPFakeBarNavigationStyle.swift */; };
+		DBE71DA84B9532374EDC7795E761CE43 /* SPStorkTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DC9EBCB64F6423E9E7D59BD969388E /* SPStorkTransitioningDelegate.swift */; };
+		E30D1576201F0FA2FFD896D023FF4DD0 /* SPFakeBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 924D0299EF15160178BCEF3CE6AEF92E /* SPFakeBar-dummy.m */; };
+		E648DE18ED39BFB8A22CD01DE189858B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		E84600FFD85E426B8B24E0CA1ECE6BD9 /* SPStorkPresentingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D01337A29DA8D2527B91ECE2E33481 /* SPStorkPresentingAnimationController.swift */; };
+		EAA8AEF9FA61F44F6CC4396A4CAC6E4F /* SPStorkControllerConfirmDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2254D37ECEFDD13A4318A2D1F8CD1F /* SPStorkControllerConfirmDelegate.swift */; };
+		EE83B058A3A97745A8FC7351A28A63F5 /* SPLarkSettingsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62A04566B3A7AC3A7875B795B5A75 /* SPLarkSettingsCollectionView.swift */; };
+		F273A04C9ED09F735BCA2C506D6B028A /* SPStorkCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007D165F539DA2AEEE1CFD7723907306 /* SPStorkCloseButton.swift */; };
+		F49584EDCFE74AD53809B7BC42CA0E38 /* SPStorkControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6FF209DB7BCE92B82221E9CDA32AED /* SPStorkControllerDelegate.swift */; };
+		F8F592E70D99DD27964FC96E0FA24FC5 /* SPStorkDismissingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649FB5FA27FD95A228C12EA64FF4BE6D /* SPStorkDismissingAnimationController.swift */; };
+		FB00072465C4D0B6882603D0CBAC7314 /* SPLarkPresentingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8936D91B2BDE7321772B400539D4BD52 /* SPLarkPresentingAnimationController.swift */; };
+		FC36628E46AFE7594E208D5F46DA6138 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0B2077931BC56AA17EFF4B17AF58D16E /* PBXContainerItemProxy */ = {
+		1EC70E74F51A9452CD14BB6C218D9CCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE1F4DC41D026DFDC4D3FAD64E8A4732;
+			remoteInfo = SPFakeBar;
+		};
+		280944E4C33C029FAEBE8E56A6827106 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CB9DDEEC3F33BA3548240CEF6749842;
+			remoteInfo = SPLarkController;
+		};
+		6568A93469537593DDF09D9DF14E0D41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81E95886B4E31CDABBDB7AF092755E05;
+			remoteInfo = SPStorkController;
+		};
+		ECC94E5001235444BF487A3544E0BB8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -27,78 +86,214 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BA239356B783CBF7B71255B0DABF31B /* Async.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Async.framework; path = AsyncSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		007D165F539DA2AEEE1CFD7723907306 /* SPStorkCloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkCloseButton.swift; path = Source/SPStorkController/Views/SPStorkCloseButton.swift; sourceTree = "<group>"; };
+		01C1202F1808E9D04B304B674C4B78FD /* SPLarkSettingsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPLarkSettingsController.swift; path = Source/SPLarkController/SettingsController/SPLarkSettingsController.swift; sourceTree = "<group>"; };
+		030A10EB802157589FC62D6D825EA195 /* AsyncSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AsyncSwift-umbrella.h"; sourceTree = "<group>"; };
+		04B3B7AE5BC790CDEE3E4F91D32E7FF9 /* SPFakeBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SPFakeBar-Info.plist"; sourceTree = "<group>"; };
+		07C49411963DC14FA745B323EF2FBF0C /* AsyncSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AsyncSwift-Info.plist"; sourceTree = "<group>"; };
 		0D8111F50A787BE6B8E138384BB00236 /* Pods-XYZVCX-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XYZVCX-frameworks.sh"; sourceTree = "<group>"; };
-		21C783E7AD6339057B015B610ABE53D6 /* AsyncSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AsyncSwift.xcconfig; sourceTree = "<group>"; };
+		0EB28D6784066FA9039575ECB24AF3E1 /* SPStorkController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SPStorkController-dummy.m"; sourceTree = "<group>"; };
+		1F6D5DE016810F17FE1AC74B1A8FE7E5 /* SPStorkViewControllerExtenshion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkViewControllerExtenshion.swift; path = Source/SPStorkController/Extenshion/SPStorkViewControllerExtenshion.swift; sourceTree = "<group>"; };
+		221566F96E5AAACE4A88B6510936B87F /* SPLarkSettingsCloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPLarkSettingsCloseButton.swift; path = Source/SPLarkController/SettingsController/SPLarkSettingsCloseButton.swift; sourceTree = "<group>"; };
+		24A3252996B90EC61D6709E8D0394428 /* AsyncSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AsyncSwift.modulemap; sourceTree = "<group>"; };
+		26D2140BA6FF2F196947663089B59387 /* SPLarkControllerExtenshion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPLarkControllerExtenshion.swift; path = Source/SPLarkController/SPLarkControllerExtenshion.swift; sourceTree = "<group>"; };
 		276ACE37F106AB91279A9FCE3A3FF025 /* Pods-XYZVCX-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XYZVCX-Info.plist"; sourceTree = "<group>"; };
-		27A57257CC0B76342BE69A1774FF8630 /* AsyncSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AsyncSwift-prefix.pch"; sourceTree = "<group>"; };
 		2D7DC053891B24F8569F3084FD3A0BDA /* Pods-XYZVCX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XYZVCX-dummy.m"; sourceTree = "<group>"; };
-		3F6BFCEC4F188B9B06605BF7E5E563F1 /* AsyncSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AsyncSwift-Info.plist"; sourceTree = "<group>"; };
-		451598E7E7FD12C0B3E72B2BB0893305 /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/Async/Async.swift; sourceTree = "<group>"; };
-		5B75A06F0F0D7203AF4EE2AB70B55FE8 /* AsyncSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AsyncSwift-dummy.m"; sourceTree = "<group>"; };
+		2F2723EEB66E24A4856B3B371EFCAB0D /* SPStorkController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPStorkController.xcconfig; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		34C2979C507F0BF58C667F161D764D85 /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/Async/Async.swift; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		437F4951BD728094930D364D3054A9F4 /* AsyncSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AsyncSwift-prefix.pch"; sourceTree = "<group>"; };
+		48D01337A29DA8D2527B91ECE2E33481 /* SPStorkPresentingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkPresentingAnimationController.swift; path = Source/SPStorkController/TransitioningDelegate/SPStorkPresentingAnimationController.swift; sourceTree = "<group>"; };
+		4A0627371BEC733CFE47664DA1E2A32B /* SPLarkTransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPLarkTransitioningDelegate.swift; path = Source/SPLarkController/TransitioningDelegate/SPLarkTransitioningDelegate.swift; sourceTree = "<group>"; };
+		4B8A6150A6846B582B8053B90D78C353 /* SPFakeBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPFakeBarView.swift; path = Source/SPFakeBar/SPFakeBarView.swift; sourceTree = "<group>"; };
+		4F7708DFCC8ECEFD14720C064BF0B4BD /* SPStorkIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkIndicatorView.swift; path = Source/SPStorkController/Views/SPStorkIndicatorView.swift; sourceTree = "<group>"; };
+		4FEF81E883D90F848FD50EC527A76911 /* SPFakeBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPFakeBar-umbrella.h"; sourceTree = "<group>"; };
+		60DFC6352B664386DA8FE266C84E5B1B /* SPLarkController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SPLarkController-dummy.m"; sourceTree = "<group>"; };
+		61BF02B76190D493667AEAD75D967D9D /* SPStorkCodeDraw.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkCodeDraw.swift; path = Source/SPStorkController/CodeDraw/SPStorkCodeDraw.swift; sourceTree = "<group>"; };
+		649FB5FA27FD95A228C12EA64FF4BE6D /* SPStorkDismissingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkDismissingAnimationController.swift; path = Source/SPStorkController/TransitioningDelegate/SPStorkDismissingAnimationController.swift; sourceTree = "<group>"; };
+		64EC2F1B08D99CC0CBE12BD079879804 /* SPLarkController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPLarkController-prefix.pch"; sourceTree = "<group>"; };
+		6578802E16A1ED4FAC082ADC32213B6A /* SPStorkController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPStorkController-prefix.pch"; sourceTree = "<group>"; };
+		66A29AB7F08B8731EFF9BFF5A18F6925 /* SPStorkPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkPresentationController.swift; path = Source/SPStorkController/TransitioningDelegate/SPStorkPresentationController.swift; sourceTree = "<group>"; };
+		72DC9EBCB64F6423E9E7D59BD969388E /* SPStorkTransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkTransitioningDelegate.swift; path = Source/SPStorkController/TransitioningDelegate/SPStorkTransitioningDelegate.swift; sourceTree = "<group>"; };
 		7A57918F94A0B046386374CF50CAAD57 /* Pods-XYZVCX-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XYZVCX-acknowledgements.plist"; sourceTree = "<group>"; };
-		7C1DE4FADF16BD0ABF455CD03608661E /* Pods_XYZVCX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XYZVCX.framework; path = "Pods-XYZVCX.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6FF209DB7BCE92B82221E9CDA32AED /* SPStorkControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkControllerDelegate.swift; path = Source/SPStorkController/Protocols/SPStorkControllerDelegate.swift; sourceTree = "<group>"; };
+		80D45052B7153900CBF84160541D329D /* SPStorkController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkController.swift; path = Source/SPStorkController/SPStorkController.swift; sourceTree = "<group>"; };
+		84337C126A448FEE5DD868734A7E4279 /* AsyncSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AsyncSwift-dummy.m"; sourceTree = "<group>"; };
+		84858646FAD916C9B99F500D027FF2E4 /* SPFakeBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPFakeBar.xcconfig; sourceTree = "<group>"; };
+		875007E804C88259C69F263FC4548673 /* SPLarkController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SPLarkController-Info.plist"; sourceTree = "<group>"; };
+		8936D91B2BDE7321772B400539D4BD52 /* SPLarkPresentingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPLarkPresentingAnimationController.swift; path = Source/SPLarkController/TransitioningDelegate/SPLarkPresentingAnimationController.swift; sourceTree = "<group>"; };
 		8A6406CF889D7A50B268B8DCB78788FA /* Pods-XYZVCX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XYZVCX.release.xcconfig"; sourceTree = "<group>"; };
-		94AFE784340111366DBA79BD6A3A292C /* AsyncSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AsyncSwift-umbrella.h"; sourceTree = "<group>"; };
+		8C8D3E7DAC4A6F7D93BEE7C98A601DC9 /* SPStorkController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SPStorkController.framework; path = SPStorkController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB34B0F308032AA7B7B90784BF75125 /* SPLarkController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SPLarkController.modulemap; sourceTree = "<group>"; };
+		907E34B23E8361AB567B38FD5001A785 /* AsyncSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AsyncSwift.xcconfig; sourceTree = "<group>"; };
+		924D0299EF15160178BCEF3CE6AEF92E /* SPFakeBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SPFakeBar-dummy.m"; sourceTree = "<group>"; };
+		95A62A04566B3A7AC3A7875B795B5A75 /* SPLarkSettingsCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPLarkSettingsCollectionView.swift; path = Source/SPLarkController/SettingsController/SPLarkSettingsCollectionView.swift; sourceTree = "<group>"; };
 		98C32E7D52EA3D566EA0E8EF6F5E7C9A /* Pods-XYZVCX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XYZVCX.modulemap"; sourceTree = "<group>"; };
+		9C64DECB3C52AD2F791C2E355C5AB1FB /* SPLarkController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPLarkController-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A000175314D8D929C2F4B64469F29F39 /* SPFakeBarNavigationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPFakeBarNavigationStyle.swift; path = Source/SPFakeBar/SPFakeBarNavigationStyle.swift; sourceTree = "<group>"; };
+		A80923A503E380B15D36AAA5F525D9D0 /* SPLarkController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SPLarkController.framework; path = SPLarkController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B031B69AA5E1DE525303994A9BB6D572 /* Pods-XYZVCX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XYZVCX.debug.xcconfig"; sourceTree = "<group>"; };
 		B1CE4BA57C17C0934349AEC4C42F2BDD /* Pods-XYZVCX-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XYZVCX-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B4D899FB0CB08CA39B7546ABC66C41E0 /* Pods-XYZVCX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XYZVCX-umbrella.h"; sourceTree = "<group>"; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		FFC03061F848D45D0CDCB5D5F462E9CD /* AsyncSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AsyncSwift.modulemap; sourceTree = "<group>"; };
+		B9FE55B2F3D8A74B8A9422E0177657D9 /* SPLarkDismissingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPLarkDismissingAnimationController.swift; path = Source/SPLarkController/TransitioningDelegate/SPLarkDismissingAnimationController.swift; sourceTree = "<group>"; };
+		C16AE9A42E24D9743120DD092840DB09 /* SPFakeBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SPFakeBar.modulemap; sourceTree = "<group>"; };
+		C18A855347F95BB321590C30EEC7A9D0 /* Async.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Async.framework; path = AsyncSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C397169447FE9C689DBFDB0C708C7DA1 /* SPLarkController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPLarkController.swift; path = Source/SPLarkController/SPLarkController.swift; sourceTree = "<group>"; };
+		C6F8957B051950CC1A877F517767859C /* SPFakeBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SPFakeBar.framework; path = SPFakeBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C758D5B38FBF75B38CFAC81F8CCBDD3F /* SPStorkHaptic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkHaptic.swift; path = Source/SPStorkController/Models/SPStorkHaptic.swift; sourceTree = "<group>"; };
+		D10DE0D6D9795DCFB4E5779CE20D440B /* SPStorkController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SPStorkController-Info.plist"; sourceTree = "<group>"; };
+		D79E742D95B2A459038A21B009DDB759 /* SPFakeBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPFakeBar-prefix.pch"; sourceTree = "<group>"; };
+		DDF61F94BA8F593E6B6995FC08E20A99 /* Pods_XYZVCX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XYZVCX.framework; path = "Pods-XYZVCX.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02277522ADA8A31981F477D5095F17E /* SPLarkSettingsCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPLarkSettingsCollectionViewCell.swift; path = Source/SPLarkController/SettingsController/SPLarkSettingsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E84353FD9FE580F2E40E78EE70B9DA08 /* SPStorkCloseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkCloseView.swift; path = Source/SPStorkController/Views/SPStorkCloseView.swift; sourceTree = "<group>"; };
+		EA4E3CC86B1FA311F76F869F92906EF1 /* SPStorkController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SPStorkController.modulemap; sourceTree = "<group>"; };
+		F1805077AB78D2BCBADD8A85F5818319 /* SPStorkSeque.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkSeque.swift; path = Source/SPStorkController/SPStorkSeque.swift; sourceTree = "<group>"; };
+		F6AD62273096935513F3318C80424F3C /* SPLarkController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPLarkController.xcconfig; sourceTree = "<group>"; };
+		F81D253FD4DDF8DFC373C73361DF434A /* SPStorkController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPStorkController-umbrella.h"; sourceTree = "<group>"; };
+		FB2254D37ECEFDD13A4318A2D1F8CD1F /* SPStorkControllerConfirmDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPStorkControllerConfirmDelegate.swift; path = Source/SPStorkController/Protocols/SPStorkControllerConfirmDelegate.swift; sourceTree = "<group>"; };
+		FB3013CAC99FAC9832328BE50788ADCA /* SPLarkPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPLarkPresentationController.swift; path = Source/SPLarkController/TransitioningDelegate/SPLarkPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D71DB1623C06BBF0FBFE8843C4D7D1D4 /* Frameworks */ = {
+		4B57CA2952731250E030248D3FDA22E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FE892FAEE3830CCEA20D863665D8A1E /* Foundation.framework in Frameworks */,
+				B922A66D7A6DC8CFA5A3799F6D1716F5 /* Foundation.framework in Frameworks */,
+				01DB7A898EF67554A612786E5ECBD220 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E84FB0D72F29199CDE8BB7CB8BC707BA /* Frameworks */ = {
+		8E8D1A79EA802DDA2C175C72B83B0E6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE1811A6D9D0CCB02C28EBBCFC07D00A /* Foundation.framework in Frameworks */,
+				10721F4FA7648F6414144E6388ACB07C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4180297B97FA33B09BD491885DBB3E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73CB92A4E8818098AE7D8108D2A7921E /* Foundation.framework in Frameworks */,
+				FC36628E46AFE7594E208D5F46DA6138 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA889F9457F0C07CF6724986F46055E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E05EC0AF7DD1173BE36F83037873158 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF32CB37667503308C0159597AE5D40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1609F15EDA5CABE7C39C47EAB55A060 /* Foundation.framework in Frameworks */,
+				E648DE18ED39BFB8A22CD01DE189858B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		117234C8DB5E8493A39A6ED0655CEC51 /* AsyncSwift */ = {
+		0A648619D0E47B90916B7350CC587480 /* SPLarkController */ = {
 			isa = PBXGroup;
 			children = (
-				451598E7E7FD12C0B3E72B2BB0893305 /* Async.swift */,
-				36D5A99CCC14407D551CB4EC0120CA99 /* Support Files */,
+				C397169447FE9C689DBFDB0C708C7DA1 /* SPLarkController.swift */,
+				26D2140BA6FF2F196947663089B59387 /* SPLarkControllerExtenshion.swift */,
+				B9FE55B2F3D8A74B8A9422E0177657D9 /* SPLarkDismissingAnimationController.swift */,
+				FB3013CAC99FAC9832328BE50788ADCA /* SPLarkPresentationController.swift */,
+				8936D91B2BDE7321772B400539D4BD52 /* SPLarkPresentingAnimationController.swift */,
+				221566F96E5AAACE4A88B6510936B87F /* SPLarkSettingsCloseButton.swift */,
+				95A62A04566B3A7AC3A7875B795B5A75 /* SPLarkSettingsCollectionView.swift */,
+				E02277522ADA8A31981F477D5095F17E /* SPLarkSettingsCollectionViewCell.swift */,
+				01C1202F1808E9D04B304B674C4B78FD /* SPLarkSettingsController.swift */,
+				4A0627371BEC733CFE47664DA1E2A32B /* SPLarkTransitioningDelegate.swift */,
+				8018A44B6741905FDA50B24B2ED8E840 /* Support Files */,
 			);
-			name = AsyncSwift;
-			path = AsyncSwift;
+			name = SPLarkController;
+			path = SPLarkController;
 			sourceTree = "<group>";
 		};
-		36D5A99CCC14407D551CB4EC0120CA99 /* Support Files */ = {
+		0E51258CD4C0351B657E56D62CABA07C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FFC03061F848D45D0CDCB5D5F462E9CD /* AsyncSwift.modulemap */,
-				21C783E7AD6339057B015B610ABE53D6 /* AsyncSwift.xcconfig */,
-				5B75A06F0F0D7203AF4EE2AB70B55FE8 /* AsyncSwift-dummy.m */,
-				3F6BFCEC4F188B9B06605BF7E5E563F1 /* AsyncSwift-Info.plist */,
-				27A57257CC0B76342BE69A1774FF8630 /* AsyncSwift-prefix.pch */,
-				94AFE784340111366DBA79BD6A3A292C /* AsyncSwift-umbrella.h */,
+				24A3252996B90EC61D6709E8D0394428 /* AsyncSwift.modulemap */,
+				907E34B23E8361AB567B38FD5001A785 /* AsyncSwift.xcconfig */,
+				84337C126A448FEE5DD868734A7E4279 /* AsyncSwift-dummy.m */,
+				07C49411963DC14FA745B323EF2FBF0C /* AsyncSwift-Info.plist */,
+				437F4951BD728094930D364D3054A9F4 /* AsyncSwift-prefix.pch */,
+				030A10EB802157589FC62D6D825EA195 /* AsyncSwift-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AsyncSwift";
 			sourceTree = "<group>";
 		};
-		5D2725B2010F122D675184E80D54978F /* Pods */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				117234C8DB5E8493A39A6ED0655CEC51 /* AsyncSwift */,
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
 			);
-			name = Pods;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EB047E328DD852A3F90E24D2A7B5F21 /* AsyncSwift */ = {
+			isa = PBXGroup;
+			children = (
+				34C2979C507F0BF58C667F161D764D85 /* Async.swift */,
+				0E51258CD4C0351B657E56D62CABA07C /* Support Files */,
+			);
+			name = AsyncSwift;
+			path = AsyncSwift;
+			sourceTree = "<group>";
+		};
+		593B85C43AB6FED89D7314E8375102E5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA4E3CC86B1FA311F76F869F92906EF1 /* SPStorkController.modulemap */,
+				2F2723EEB66E24A4856B3B371EFCAB0D /* SPStorkController.xcconfig */,
+				0EB28D6784066FA9039575ECB24AF3E1 /* SPStorkController-dummy.m */,
+				D10DE0D6D9795DCFB4E5779CE20D440B /* SPStorkController-Info.plist */,
+				6578802E16A1ED4FAC082ADC32213B6A /* SPStorkController-prefix.pch */,
+				F81D253FD4DDF8DFC373C73361DF434A /* SPStorkController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SPStorkController";
+			sourceTree = "<group>";
+		};
+		71160A976B0EF4AECAE2686157A02512 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C16AE9A42E24D9743120DD092840DB09 /* SPFakeBar.modulemap */,
+				84858646FAD916C9B99F500D027FF2E4 /* SPFakeBar.xcconfig */,
+				924D0299EF15160178BCEF3CE6AEF92E /* SPFakeBar-dummy.m */,
+				04B3B7AE5BC790CDEE3E4F91D32E7FF9 /* SPFakeBar-Info.plist */,
+				D79E742D95B2A459038A21B009DDB759 /* SPFakeBar-prefix.pch */,
+				4FEF81E883D90F848FD50EC527A76911 /* SPFakeBar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SPFakeBar";
+			sourceTree = "<group>";
+		};
+		8018A44B6741905FDA50B24B2ED8E840 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DB34B0F308032AA7B7B90784BF75125 /* SPLarkController.modulemap */,
+				F6AD62273096935513F3318C80424F3C /* SPLarkController.xcconfig */,
+				60DFC6352B664386DA8FE266C84E5B1B /* SPLarkController-dummy.m */,
+				875007E804C88259C69F263FC4548673 /* SPLarkController-Info.plist */,
+				64EC2F1B08D99CC0CBE12BD079879804 /* SPLarkController-prefix.pch */,
+				9C64DECB3C52AD2F791C2E355C5AB1FB /* SPLarkController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SPLarkController";
 			sourceTree = "<group>";
 		};
 		8755277D44341E172004A5CC3B564A75 /* Pods-XYZVCX */ = {
@@ -118,6 +313,29 @@
 			path = "Target Support Files/Pods-XYZVCX";
 			sourceTree = "<group>";
 		};
+		879DDF150AB5467EF9AE8A707833C42D /* SPStorkController */ = {
+			isa = PBXGroup;
+			children = (
+				007D165F539DA2AEEE1CFD7723907306 /* SPStorkCloseButton.swift */,
+				E84353FD9FE580F2E40E78EE70B9DA08 /* SPStorkCloseView.swift */,
+				61BF02B76190D493667AEAD75D967D9D /* SPStorkCodeDraw.swift */,
+				80D45052B7153900CBF84160541D329D /* SPStorkController.swift */,
+				FB2254D37ECEFDD13A4318A2D1F8CD1F /* SPStorkControllerConfirmDelegate.swift */,
+				7D6FF209DB7BCE92B82221E9CDA32AED /* SPStorkControllerDelegate.swift */,
+				649FB5FA27FD95A228C12EA64FF4BE6D /* SPStorkDismissingAnimationController.swift */,
+				C758D5B38FBF75B38CFAC81F8CCBDD3F /* SPStorkHaptic.swift */,
+				4F7708DFCC8ECEFD14720C064BF0B4BD /* SPStorkIndicatorView.swift */,
+				66A29AB7F08B8731EFF9BFF5A18F6925 /* SPStorkPresentationController.swift */,
+				48D01337A29DA8D2527B91ECE2E33481 /* SPStorkPresentingAnimationController.swift */,
+				F1805077AB78D2BCBADD8A85F5818319 /* SPStorkSeque.swift */,
+				72DC9EBCB64F6423E9E7D59BD969388E /* SPStorkTransitioningDelegate.swift */,
+				1F6D5DE016810F17FE1AC74B1A8FE7E5 /* SPStorkViewControllerExtenshion.swift */,
+				593B85C43AB6FED89D7314E8375102E5 /* Support Files */,
+			);
+			name = SPStorkController;
+			path = SPStorkController;
+			sourceTree = "<group>";
+		};
 		8B7F6314EB55EEE8E2C70D64AA1BC11F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,19 +344,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+		A9E425BD2F61E116E704321739DB6FE7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		BA4F8B3D83B1A36D085CFAC1B90D8548 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0BA239356B783CBF7B71255B0DABF31B /* Async.framework */,
-				7C1DE4FADF16BD0ABF455CD03608661E /* Pods_XYZVCX.framework */,
+				C18A855347F95BB321590C30EEC7A9D0 /* Async.framework */,
+				DDF61F94BA8F593E6B6995FC08E20A99 /* Pods_XYZVCX.framework */,
+				C6F8957B051950CC1A877F517767859C /* SPFakeBar.framework */,
+				A80923A503E380B15D36AAA5F525D9D0 /* SPLarkController.framework */,
+				8C8D3E7DAC4A6F7D93BEE7C98A601DC9 /* SPStorkController.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,37 +360,84 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				5D2725B2010F122D675184E80D54978F /* Pods */,
-				BA4F8B3D83B1A36D085CFAC1B90D8548 /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				D3CF7859D34B29FE945319556B73B2C7 /* Pods */,
+				A9E425BD2F61E116E704321739DB6FE7 /* Products */,
 				8B7F6314EB55EEE8E2C70D64AA1BC11F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D3CF7859D34B29FE945319556B73B2C7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+				4EB047E328DD852A3F90E24D2A7B5F21 /* AsyncSwift */,
+				F3344A820245A897A639B96518FBBBC5 /* SPFakeBar */,
+				0A648619D0E47B90916B7350CC587480 /* SPLarkController */,
+				879DDF150AB5467EF9AE8A707833C42D /* SPStorkController */,
 			);
-			name = Frameworks;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F3344A820245A897A639B96518FBBBC5 /* SPFakeBar */ = {
+			isa = PBXGroup;
+			children = (
+				A000175314D8D929C2F4B64469F29F39 /* SPFakeBarNavigationStyle.swift */,
+				4B8A6150A6846B582B8053B90D78C353 /* SPFakeBarView.swift */,
+				71160A976B0EF4AECAE2686157A02512 /* Support Files */,
+			);
+			name = SPFakeBar;
+			path = SPFakeBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5DBD165A972F60BAABA8F57028CC33E0 /* Headers */ = {
+		297DF0E0BBDCFCA3630EDFBF006471FB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				403005C6B713AB41381DC79F095560F0 /* AsyncSwift-umbrella.h in Headers */,
+				B3417F6C24BF0035E66B0983E2655CA3 /* SPStorkController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6252556F79CFC651091FDE4245873575 /* Headers */ = {
+		6F73CB8533ECC2FE1E04F493C07423D2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CB8EA3B33C0E21470270AA0C66CC5C5 /* Pods-XYZVCX-umbrella.h in Headers */,
+				27780860CD30FAF8DB73B15F9ADB8479 /* SPFakeBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		863A508CD0C21657B0CA9F62FD25C3DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C869974B845471A239A4422A66DC838 /* Pods-XYZVCX-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE4D3372EFF6FF521DE0ADA15761FAF9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E66906171074C835FC5388B4C3179F /* AsyncSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1CB15E88E973D6C4295BCA81F47C802 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30A3BF6BB61092201215FF1874ED29E4 /* SPLarkController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,31 +446,70 @@
 /* Begin PBXNativeTarget section */
 		266C24EB0097D3E30147200461E1AB59 /* Pods-XYZVCX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 976B832CB47F65F7036FF79F1FC6C2BE /* Build configuration list for PBXNativeTarget "Pods-XYZVCX" */;
+			buildConfigurationList = 23986B90D403D9A3E1A7E70D13C094C6 /* Build configuration list for PBXNativeTarget "Pods-XYZVCX" */;
 			buildPhases = (
-				6252556F79CFC651091FDE4245873575 /* Headers */,
-				182F8BFD4EE628DB4C46EEA6C8756964 /* Sources */,
-				E84FB0D72F29199CDE8BB7CB8BC707BA /* Frameworks */,
-				38A39A776A6E07AEF5582D9FC324AC86 /* Resources */,
+				863A508CD0C21657B0CA9F62FD25C3DD /* Headers */,
+				A7B50EB71F006FC1BF265ADDFA7C5CDA /* Sources */,
+				8E8D1A79EA802DDA2C175C72B83B0E6B /* Frameworks */,
+				D9AE986958B6A6A1777EA54F89CF7321 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E5507AA863AC0261F1F502CE2F4CF3BA /* PBXTargetDependency */,
+				D3D2BBFE5EE95F8869A12E62CCDC20D8 /* PBXTargetDependency */,
+				31005FD228624BD3F5F491DF1424CBE3 /* PBXTargetDependency */,
+				CE54410F1F440DE897F57F79F8375944 /* PBXTargetDependency */,
+				8D3F395EDFD1570E12D3769818E7EE0A /* PBXTargetDependency */,
 			);
 			name = "Pods-XYZVCX";
 			productName = "Pods-XYZVCX";
-			productReference = 7C1DE4FADF16BD0ABF455CD03608661E /* Pods_XYZVCX.framework */;
+			productReference = DDF61F94BA8F593E6B6995FC08E20A99 /* Pods_XYZVCX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7CB9DDEEC3F33BA3548240CEF6749842 /* SPLarkController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C2BDE4A57FC9DB82FB289E5EB6BB5C /* Build configuration list for PBXNativeTarget "SPLarkController" */;
+			buildPhases = (
+				E1CB15E88E973D6C4295BCA81F47C802 /* Headers */,
+				CF8BE34C77D745795BC1233B59D5347B /* Sources */,
+				4B57CA2952731250E030248D3FDA22E9 /* Frameworks */,
+				ED0571345B30AAAD698E3740F9E78354 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPLarkController;
+			productName = SPLarkController;
+			productReference = A80923A503E380B15D36AAA5F525D9D0 /* SPLarkController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		81E95886B4E31CDABBDB7AF092755E05 /* SPStorkController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FB85F351BAF3FD088B02C53CC285742 /* Build configuration list for PBXNativeTarget "SPStorkController" */;
+			buildPhases = (
+				297DF0E0BBDCFCA3630EDFBF006471FB /* Headers */,
+				A44532EEF81C2BCE9A263B6260EC9C4C /* Sources */,
+				CBF32CB37667503308C0159597AE5D40 /* Frameworks */,
+				EFD3C04E824C0E381AE9B546C0BBB363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPStorkController;
+			productName = SPStorkController;
+			productReference = 8C8D3E7DAC4A6F7D93BEE7C98A601DC9 /* SPStorkController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		975690F47D860B117FB4B04B42AB69C9 /* AsyncSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E6D11336E633E913BF3B33DDD76D4CBD /* Build configuration list for PBXNativeTarget "AsyncSwift" */;
+			buildConfigurationList = 79A0C3D01971B7CE18B2E2AE130529B2 /* Build configuration list for PBXNativeTarget "AsyncSwift" */;
 			buildPhases = (
-				5DBD165A972F60BAABA8F57028CC33E0 /* Headers */,
-				7AB67AB3BF2E3C88113B384C1380E240 /* Sources */,
-				D71DB1623C06BBF0FBFE8843C4D7D1D4 /* Frameworks */,
-				4833D8A53B93BAB2F3E491B9C6DA324C /* Resources */,
+				DE4D3372EFF6FF521DE0ADA15761FAF9 /* Headers */,
+				3DFDB7C5BD6F649B56699A6DDA594B41 /* Sources */,
+				CA889F9457F0C07CF6724986F46055E6 /* Frameworks */,
+				60DB55F4A0500672EBC451BBE9EEB227 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -218,7 +517,25 @@
 			);
 			name = AsyncSwift;
 			productName = AsyncSwift;
-			productReference = 0BA239356B783CBF7B71255B0DABF31B /* Async.framework */;
+			productReference = C18A855347F95BB321590C30EEC7A9D0 /* Async.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE1F4DC41D026DFDC4D3FAD64E8A4732 /* SPFakeBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37FBB9BA1CEEE21EABE9D509053491A3 /* Build configuration list for PBXNativeTarget "SPFakeBar" */;
+			buildPhases = (
+				6F73CB8533ECC2FE1E04F493C07423D2 /* Headers */,
+				908E389337A0FC9C00D63E3D56DBA430 /* Sources */,
+				C4180297B97FA33B09BD491885DBB3E1 /* Frameworks */,
+				F27DA2D9DCB122CD42B6588C34145182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPFakeBar;
+			productName = SPFakeBar;
+			productReference = C6F8957B051950CC1A877F517767859C /* SPFakeBar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -227,36 +544,60 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = BA4F8B3D83B1A36D085CFAC1B90D8548 /* Products */;
+			productRefGroup = A9E425BD2F61E116E704321739DB6FE7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				975690F47D860B117FB4B04B42AB69C9 /* AsyncSwift */,
 				266C24EB0097D3E30147200461E1AB59 /* Pods-XYZVCX */,
+				FE1F4DC41D026DFDC4D3FAD64E8A4732 /* SPFakeBar */,
+				7CB9DDEEC3F33BA3548240CEF6749842 /* SPLarkController */,
+				81E95886B4E31CDABBDB7AF092755E05 /* SPStorkController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		38A39A776A6E07AEF5582D9FC324AC86 /* Resources */ = {
+		60DB55F4A0500672EBC451BBE9EEB227 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4833D8A53B93BAB2F3E491B9C6DA324C /* Resources */ = {
+		D9AE986958B6A6A1777EA54F89CF7321 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED0571345B30AAAD698E3740F9E78354 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFD3C04E824C0E381AE9B546C0BBB363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F27DA2D9DCB122CD42B6588C34145182 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,76 +607,107 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		182F8BFD4EE628DB4C46EEA6C8756964 /* Sources */ = {
+		3DFDB7C5BD6F649B56699A6DDA594B41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E48A0DAF91D7AB10158FC4942E8D95 /* Pods-XYZVCX-dummy.m in Sources */,
+				58F0C306541B5F08526BB2B429057BA1 /* Async.swift in Sources */,
+				786AE1A2DF986A4903519DA2307D4CEF /* AsyncSwift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AB67AB3BF2E3C88113B384C1380E240 /* Sources */ = {
+		908E389337A0FC9C00D63E3D56DBA430 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F821F787F54068BFB0BC00D454D6FD7 /* Async.swift in Sources */,
-				F4D1A276A8BA1D67829949691F46004C /* AsyncSwift-dummy.m in Sources */,
+				E30D1576201F0FA2FFD896D023FF4DD0 /* SPFakeBar-dummy.m in Sources */,
+				D156596331DC272C6D54D77F528E8AC8 /* SPFakeBarNavigationStyle.swift in Sources */,
+				2FF935CD4355A28D02E99DC70B507E69 /* SPFakeBarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A44532EEF81C2BCE9A263B6260EC9C4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F273A04C9ED09F735BCA2C506D6B028A /* SPStorkCloseButton.swift in Sources */,
+				AFE918354E105A305EE95C202806F49A /* SPStorkCloseView.swift in Sources */,
+				B1FFE5DC48CED21CF4CE8E020EA27CA7 /* SPStorkCodeDraw.swift in Sources */,
+				B9E482FD36C52333B4463F62A5956D90 /* SPStorkController-dummy.m in Sources */,
+				A3D56AEB71F5D76AD5691FE23A770298 /* SPStorkController.swift in Sources */,
+				EAA8AEF9FA61F44F6CC4396A4CAC6E4F /* SPStorkControllerConfirmDelegate.swift in Sources */,
+				F49584EDCFE74AD53809B7BC42CA0E38 /* SPStorkControllerDelegate.swift in Sources */,
+				F8F592E70D99DD27964FC96E0FA24FC5 /* SPStorkDismissingAnimationController.swift in Sources */,
+				77878A5F2CC1AF2C700E159A77BB39B1 /* SPStorkHaptic.swift in Sources */,
+				34F116F35A1DDF7133206046EFAA7BB7 /* SPStorkIndicatorView.swift in Sources */,
+				940CDA53E5EF0C9F1E9B506B610EEE5B /* SPStorkPresentationController.swift in Sources */,
+				E84600FFD85E426B8B24E0CA1ECE6BD9 /* SPStorkPresentingAnimationController.swift in Sources */,
+				538650345A53DA9C22A06B14EBC3354A /* SPStorkSeque.swift in Sources */,
+				DBE71DA84B9532374EDC7795E761CE43 /* SPStorkTransitioningDelegate.swift in Sources */,
+				01A2C09DD41BB4077FB0AC7933912043 /* SPStorkViewControllerExtenshion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B50EB71F006FC1BF265ADDFA7C5CDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848A0CED94965F6789ABA58B6807E63A /* Pods-XYZVCX-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF8BE34C77D745795BC1233B59D5347B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2758B07E387D0B1E5F74B59AE075EFB /* SPLarkController-dummy.m in Sources */,
+				529BBA2FDAFF23090D7D9D7F5AFED767 /* SPLarkController.swift in Sources */,
+				782D145D3D616835456F600CAE9B7AD2 /* SPLarkControllerExtenshion.swift in Sources */,
+				C4F1D073AC3485B48744969DD7E5BE88 /* SPLarkDismissingAnimationController.swift in Sources */,
+				A52740E4DC6D8088E9DD1CCC07932058 /* SPLarkPresentationController.swift in Sources */,
+				FB00072465C4D0B6882603D0CBAC7314 /* SPLarkPresentingAnimationController.swift in Sources */,
+				01239F8C2C0337789F3E04B4C34845BB /* SPLarkSettingsCloseButton.swift in Sources */,
+				EE83B058A3A97745A8FC7351A28A63F5 /* SPLarkSettingsCollectionView.swift in Sources */,
+				99C9A23D124ECE5CEEC3FD8597C4C0CF /* SPLarkSettingsCollectionViewCell.swift in Sources */,
+				B721AA6B2FA2A5CE5E08BD612B295334 /* SPLarkSettingsController.swift in Sources */,
+				788CCCF5A049F7E8F7865DC6E5260DB2 /* SPLarkTransitioningDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E5507AA863AC0261F1F502CE2F4CF3BA /* PBXTargetDependency */ = {
+		31005FD228624BD3F5F491DF1424CBE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SPFakeBar;
+			target = FE1F4DC41D026DFDC4D3FAD64E8A4732 /* SPFakeBar */;
+			targetProxy = 1EC70E74F51A9452CD14BB6C218D9CCC /* PBXContainerItemProxy */;
+		};
+		8D3F395EDFD1570E12D3769818E7EE0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SPStorkController;
+			target = 81E95886B4E31CDABBDB7AF092755E05 /* SPStorkController */;
+			targetProxy = 6568A93469537593DDF09D9DF14E0D41 /* PBXContainerItemProxy */;
+		};
+		CE54410F1F440DE897F57F79F8375944 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SPLarkController;
+			target = 7CB9DDEEC3F33BA3548240CEF6749842 /* SPLarkController */;
+			targetProxy = 280944E4C33C029FAEBE8E56A6827106 /* PBXContainerItemProxy */;
+		};
+		D3D2BBFE5EE95F8869A12E62CCDC20D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AsyncSwift;
 			target = 975690F47D860B117FB4B04B42AB69C9 /* AsyncSwift */;
-			targetProxy = 0B2077931BC56AA17EFF4B17AF58D16E /* PBXContainerItemProxy */;
+			targetProxy = ECC94E5001235444BF487A3544E0BB8A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2FB7229FE7BB3598ED2F455140AFDD2D /* Release */ = {
+		11F95AFAC575934F8636BD202AB58F04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21C783E7AD6339057B015B610ABE53D6 /* AsyncSwift.xcconfig */;
+			baseConfigurationReference = 84858646FAD916C9B99F500D027FF2E4 /* SPFakeBar.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AsyncSwift/AsyncSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AsyncSwift/AsyncSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AsyncSwift/AsyncSwift.modulemap";
-				PRODUCT_MODULE_NAME = Async;
-				PRODUCT_NAME = Async;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5E77C4BA701FC3088EF1066F5627377C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A6406CF889D7A50B268B8DCB78788FA /* Pods-XYZVCX.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -346,23 +718,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-XYZVCX/Pods-XYZVCX-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SPFakeBar/SPFakeBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPFakeBar/SPFakeBar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-XYZVCX/Pods-XYZVCX.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SPFakeBar/SPFakeBar.modulemap";
+				PRODUCT_MODULE_NAME = SPFakeBar;
+				PRODUCT_NAME = SPFakeBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -370,10 +741,11 @@
 			};
 			name = Release;
 		};
-		6426A37AA5428F5E549ECEA3503D8B88 /* Debug */ = {
+		287031F81F21E005728B655946E2EEEC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21C783E7AD6339057B015B610ABE53D6 /* AsyncSwift.xcconfig */;
+			baseConfigurationReference = 2F2723EEB66E24A4856B3B371EFCAB0D /* SPStorkController.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -383,18 +755,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AsyncSwift/AsyncSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AsyncSwift/AsyncSwift-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SPStorkController/SPStorkController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPStorkController/SPStorkController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/AsyncSwift/AsyncSwift.modulemap";
-				PRODUCT_MODULE_NAME = Async;
-				PRODUCT_NAME = Async;
+				MODULEMAP_FILE = "Target Support Files/SPStorkController/SPStorkController.modulemap";
+				PRODUCT_MODULE_NAME = SPStorkController;
+				PRODUCT_NAME = SPStorkController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -405,7 +777,7 @@
 			};
 			name = Debug;
 		};
-		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
+		32C2FB3BD9A2402E2347CE50F405010A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -460,12 +832,12 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
+		65E8432CA1AC1817F746BE6B5C4F067E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -524,12 +896,48 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		FEC52E351BAB706BD5DB5104B6FB702A /* Debug */ = {
+		71B18280E7B2CA983780DED40375F4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6AD62273096935513F3318C80424F3C /* SPLarkController.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPLarkController/SPLarkController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPLarkController/SPLarkController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SPLarkController/SPLarkController.modulemap";
+				PRODUCT_MODULE_NAME = SPLarkController;
+				PRODUCT_NAME = SPLarkController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A0AEC834A014DAF005C91372E6090E35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B031B69AA5E1DE525303994A9BB6D572 /* Pods-XYZVCX.debug.xcconfig */;
 			buildSettings = {
@@ -567,32 +975,279 @@
 			};
 			name = Debug;
 		};
+		D78A26C360D66A3763700F5DA3519C9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84858646FAD916C9B99F500D027FF2E4 /* SPFakeBar.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPFakeBar/SPFakeBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPFakeBar/SPFakeBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SPFakeBar/SPFakeBar.modulemap";
+				PRODUCT_MODULE_NAME = SPFakeBar;
+				PRODUCT_NAME = SPFakeBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D90BD6C5A8D66CE90A253F5F1DA6CFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A6406CF889D7A50B268B8DCB78788FA /* Pods-XYZVCX.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XYZVCX/Pods-XYZVCX-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XYZVCX/Pods-XYZVCX.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DB2C22827200C04A848826C9AC5713ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6AD62273096935513F3318C80424F3C /* SPLarkController.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPLarkController/SPLarkController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPLarkController/SPLarkController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SPLarkController/SPLarkController.modulemap";
+				PRODUCT_MODULE_NAME = SPLarkController;
+				PRODUCT_NAME = SPLarkController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE1E624EE5D1610982DD94A086825038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F2723EEB66E24A4856B3B371EFCAB0D /* SPStorkController.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPStorkController/SPStorkController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPStorkController/SPStorkController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SPStorkController/SPStorkController.modulemap";
+				PRODUCT_MODULE_NAME = SPStorkController;
+				PRODUCT_NAME = SPStorkController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E154990E3E06D392F8A7B4DDA3B53D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 907E34B23E8361AB567B38FD5001A785 /* AsyncSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AsyncSwift/AsyncSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AsyncSwift/AsyncSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AsyncSwift/AsyncSwift.modulemap";
+				PRODUCT_MODULE_NAME = Async;
+				PRODUCT_NAME = Async;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD505972E74EE14AB8A174BADF10ADE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 907E34B23E8361AB567B38FD5001A785 /* AsyncSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AsyncSwift/AsyncSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AsyncSwift/AsyncSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AsyncSwift/AsyncSwift.modulemap";
+				PRODUCT_MODULE_NAME = Async;
+				PRODUCT_NAME = Async;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		23986B90D403D9A3E1A7E70D13C094C6 /* Build configuration list for PBXNativeTarget "Pods-XYZVCX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0AEC834A014DAF005C91372E6090E35 /* Debug */,
+				D90BD6C5A8D66CE90A253F5F1DA6CFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37FBB9BA1CEEE21EABE9D509053491A3 /* Build configuration list for PBXNativeTarget "SPFakeBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78A26C360D66A3763700F5DA3519C9A /* Debug */,
+				11F95AFAC575934F8636BD202AB58F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FB85F351BAF3FD088B02C53CC285742 /* Build configuration list for PBXNativeTarget "SPStorkController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287031F81F21E005728B655946E2EEEC /* Debug */,
+				DE1E624EE5D1610982DD94A086825038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C1391485F05B41BD35738A433056B7FA /* Debug */,
-				A105C1752A0A49B30ED621B71E226CDB /* Release */,
+				65E8432CA1AC1817F746BE6B5C4F067E /* Debug */,
+				32C2FB3BD9A2402E2347CE50F405010A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		976B832CB47F65F7036FF79F1FC6C2BE /* Build configuration list for PBXNativeTarget "Pods-XYZVCX" */ = {
+		61C2BDE4A57FC9DB82FB289E5EB6BB5C /* Build configuration list for PBXNativeTarget "SPLarkController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FEC52E351BAB706BD5DB5104B6FB702A /* Debug */,
-				5E77C4BA701FC3088EF1066F5627377C /* Release */,
+				71B18280E7B2CA983780DED40375F4BC /* Debug */,
+				DB2C22827200C04A848826C9AC5713ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6D11336E633E913BF3B33DDD76D4CBD /* Build configuration list for PBXNativeTarget "AsyncSwift" */ = {
+		79A0C3D01971B7CE18B2E2AE130529B2 /* Build configuration list for PBXNativeTarget "AsyncSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6426A37AA5428F5E549ECEA3503D8B88 /* Debug */,
-				2FB7229FE7BB3598ED2F455140AFDD2D /* Release */,
+				FD505972E74EE14AB8A174BADF10ADE2 /* Debug */,
+				E154990E3E06D392F8A7B4DDA3B53D80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,99 +7,62 @@
 //
 
 import UIKit
-//import Async
 
+
+class XYZPresent: NSObject {}
 
 public extension UIViewController {
-      func Dis()  {
-        DispatchQueue.main.async {
-            self.dismiss(animated: true, completion: nil)
-        }
-    }
+    func Dis()  {  DispatchQueue.main.async {self.dismiss(animated: true, completion: nil)}}
+    
     func PresentVC(With id:String,StoryboardName:String = "Main") {
-        
-        let NAV =
-            UIStoryboard(name: StoryboardName, bundle:nil).instantiateViewController(withIdentifier: id)
-        DispatchQueue.main.async {
-            self.present(NAV, animated: true, completion: nil)
-        }
-        
+        let NAV = UIStoryboard(name: StoryboardName, bundle:nil).instantiateViewController(withIdentifier: id)
+        NAV.modalPresentationStyle = .fullScreen
+        DispatchQueue.main.async {self.present(NAV, animated: true, completion: nil)}
     }
-//      func PresentVC(With id:String){//},On VC:UIViewController) {
-//        let NAV =
-//            UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: id)
-//
-//        Async.userInitiated {}.main {
-//            self.present(NAV, animated: true, completion: nil)
-//        }
-//    }
     
-     
-    
-    
-    
-      func XPresent(VC:UIViewController,_ ID:String)  {
+    func XPresent(VC:UIViewController,_ ID:String)  {
         let x = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: ID)//"MusicTVCID")//"MusicNavID")
         x.modalTransitionStyle = .crossDissolve
+        x.modalPresentationStyle = .fullScreen
         VC.present(x, animated: true, completion: nil)
     }
     
       func PresentVCBack(With id:String,completion: (() -> Void)? = nil ,BackVC:@escaping ((UIViewController?) -> Void))  {
-        
-        
-        let NAV =
-            UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: id)
-        BackVC(NAV)
-        DispatchQueue.main.async {
-            self.present(NAV, animated: true, completion: {
-                if let completion = completion{
-                    completion()
-                }
-            })
-            
-            
-        }
+        let NAV = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: id);BackVC(NAV)
+        NAV.modalPresentationStyle = .fullScreen
+        DispatchQueue.main.async {self.present(NAV, animated: true, completion: completion)}
     }
     
 }
 
 
 public func XYZKeyPresent(With id:String) {
-    let NAV =
-        UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: id)
-    
+    let NAV =  UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: id)
+    NAV.modalPresentationStyle = .fullScreen
     for i in UIApplication.shared.windows{
         if i.isKeyWindow{
             print("是正在显示的")
             i.rootViewController?.presentedViewController?.present(NAV, animated: true, completion: nil)
         }else{print("不是正在显示的")
-            
             if let KeywindowsX = UIApplication.shared.keyWindow,let KeyVC = KeywindowsX.rootViewController{
                 print("在这里")
                 KeyVC.PresentVC(With: id)//, On: KeyVC)
             }
-            
-            
-        }
-    }
+    }}
 }
 
 
-
-
-
-class XYZPresent: NSObject {
-    
-}
 
 public func PresentShareView(VC:UIViewController,URLs:[URL],on View:UIView){
     let activityController = XYZShareActivityVC(URLs: URLs, on: View)
+    activityController.modalPresentationStyle = .fullScreen
     VC.present(activityController, animated: true, completion: nil)
 }
 
 public extension UIViewController{
     func PresentShareView(URLs:[URL]){
         let activityController = XYZShareActivityVC(URLs: URLs, on: self.view)
+        activityController.modalPresentationStyle = .fullScreen
         self.present(activityController, animated: true, completion: nil)
     }
 }
@@ -111,7 +74,6 @@ public func XYZShareActivityVC(URLs:[URL],on View:UIView) -> UIActivityViewContr
     activityController.excludedActivityTypes = excludedActivities
     activityController.popoverPresentationController?.sourceRect = CGRect(x: 4.0, y: 0.0, width: 1.0, height: 1.0)
     activityController.popoverPresentationController?.sourceView = View
-    
     return activityController
 }
 
