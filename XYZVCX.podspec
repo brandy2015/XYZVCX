@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XYZVCX"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "持续升级"
 
   # This description is used to generate tags and improve search results.
@@ -50,20 +50,15 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
 # s.dependency 'FileKit'
 
-  s.ios.deployment_target = '10.1'
+  s.ios.deployment_target = '12.0'
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "Brandy" => "" }
 
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
-  s.platform     = :ios, "10.1"
-  s.source       = { :git => "https://github.com/brandy2015/XYZVCX.git", :tag => "1.0.5"}
+  s.platform     = :ios, "12.0"
+  s.source       = { :git => "https://github.com/brandy2015/XYZVCX.git", :tag => "1.0.6"}
   s.source_files = "XYZVCX/Source/*"
-
-    s.dependency 'AsyncSwift'
-#同步异步
-
-#  s.dependency 'MBProgressHUD'         #HUD支持
 
   # s.social_media_url   = "http://twitter.com/Brandy"
 

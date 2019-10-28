@@ -14,31 +14,35 @@ class XYZPresent: NSObject {}
 public extension UIViewController {
     func Dis()  {  DispatchQueue.main.async {self.dismiss(animated: true, completion: nil)}}
     
-    func PresentVC(With id:String,StoryboardName:String = "Main") {
+    func PresentVC(With id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve) {
         let NAV = UIStoryboard(name: StoryboardName, bundle:nil).instantiateViewController(withIdentifier: id)
-        NAV.modalPresentationStyle = .fullScreen
+        NAV.modalPresentationStyle = PresentStyle
+        NAV.modalTransitionStyle = TransitionStyle
         DispatchQueue.main.async {self.present(NAV, animated: true, completion: nil)}
     }
     
-    func XPresent(VC:UIViewController,_ ID:String)  {
-        let x = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: ID)//"MusicTVCID")//"MusicNavID")
-        x.modalTransitionStyle = .crossDissolve
-        x.modalPresentationStyle = .fullScreen
-        VC.present(x, animated: true, completion: nil)
+    func PresentWith(With VC:UIViewController,id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve) {
+        let NAV = UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: id)
+        NAV.modalPresentationStyle = PresentStyle
+        NAV.modalTransitionStyle = TransitionStyle
+        DispatchQueue.main.async {VC.present(NAV, animated: true, completion: nil)}
     }
     
-      func PresentVCBack(With id:String,completion: (() -> Void)? = nil ,BackVC:@escaping ((UIViewController?) -> Void))  {
-        let NAV = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: id);BackVC(NAV)
-        NAV.modalPresentationStyle = .fullScreen
+      func PresentVCBack(With id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve,completion: (() -> Void)? = nil ,BackVC:@escaping ((UIViewController?) -> Void))  {
+        let NAV = UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: id);BackVC(NAV)
+        NAV.modalPresentationStyle = PresentStyle
+        NAV.modalTransitionStyle = TransitionStyle
         DispatchQueue.main.async {self.present(NAV, animated: true, completion: completion)}
     }
     
 }
 
 
-public func XYZKeyPresent(With id:String) {
-    let NAV =  UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: id)
-    NAV.modalPresentationStyle = .fullScreen
+public func XYZKeyPresent(With id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve) {
+    let NAV =  UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: id)
+    NAV.modalPresentationStyle = PresentStyle
+    NAV.modalTransitionStyle = TransitionStyle
+    
     for i in UIApplication.shared.windows{
         if i.isKeyWindow{
             print("是正在显示的")
@@ -46,7 +50,7 @@ public func XYZKeyPresent(With id:String) {
         }else{print("不是正在显示的")
             if let KeywindowsX = UIApplication.shared.keyWindow,let KeyVC = KeywindowsX.rootViewController{
                 print("在这里")
-                KeyVC.PresentVC(With: id)//, On: KeyVC)
+                KeyVC.PresentVC(With: id)
             }
     }}
 }
