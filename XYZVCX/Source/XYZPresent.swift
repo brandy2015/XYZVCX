@@ -11,6 +11,34 @@ import UIKit
 
 class XYZPresent: NSObject {}
 
+
+public extension UIApplication {
+    class var RootVC:UIViewController?{
+        return getTopViewController()
+    }
+
+    class func getTopViewController(basex: UIViewController? = nil) -> UIViewController? {
+        var base = basex
+        if base == nil{
+            base = UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController
+        }
+        
+        
+        if let nav = base as? UINavigationController {
+            return getTopViewController(basex: nav.visibleViewController)
+
+        } else if let tab = base as? UITabBarController, let selected = tab.selectedViewController {
+            return getTopViewController(basex: selected)
+
+        } else if let presented = base?.presentedViewController {
+            return getTopViewController(basex: presented)
+        }
+        return base
+    }
+}
+
+
+
 public extension UIViewController {
     func Dis()  {  DispatchQueue.main.async {self.dismiss(animated: true, completion: nil)}}
     
