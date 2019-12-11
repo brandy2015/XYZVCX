@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D66A8C3C22A10BA400375126 /* XYZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A8C3B22A10BA400375126 /* XYZNavigationController.swift */; };
+		D6EACA6723A0AA0C0060EB65 /* XYZVCX.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D6EACA6623A0AA0C0060EB65 /* XYZVCX.podspec */; };
 		D6F8FC9E2248EBF0001636F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F8FC9D2248EBF0001636F7 /* AppDelegate.swift */; };
 		D6F8FCA02248EBF0001636F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F8FC9F2248EBF0001636F7 /* ViewController.swift */; };
 		D6F8FCA32248EBF0001636F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F8FCA12248EBF0001636F7 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		6B54310D7A4B3916135F8203 /* Pods_XYZVCX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYZVCX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		878BCFAAF742D38E5900E04E /* Pods-XYZVCX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZVCX.debug.xcconfig"; path = "Target Support Files/Pods-XYZVCX/Pods-XYZVCX.debug.xcconfig"; sourceTree = "<group>"; };
 		D66A8C3B22A10BA400375126 /* XYZNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZNavigationController.swift; sourceTree = "<group>"; };
+		D6EACA6623A0AA0C0060EB65 /* XYZVCX.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XYZVCX.podspec; sourceTree = "<group>"; };
 		D6F8FC9A2248EBF0001636F7 /* XYZVCX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYZVCX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F8FC9D2248EBF0001636F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6F8FC9F2248EBF0001636F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		D6F8FC912248EBF0001636F7 = {
 			isa = PBXGroup;
 			children = (
+				D6EACA6623A0AA0C0060EB65 /* XYZVCX.podspec */,
 				D6F8FC9C2248EBF0001636F7 /* XYZVCX */,
 				D6F8FC9B2248EBF0001636F7 /* Products */,
 				2414DF8817A6F7314D813AA5 /* Pods */,
@@ -163,6 +166,7 @@
 			files = (
 				D6F8FCA82248EBF1001636F7 /* LaunchScreen.storyboard in Resources */,
 				D6F8FCA52248EBF1001636F7 /* Assets.xcassets in Resources */,
+				D6EACA6723A0AA0C0060EB65 /* XYZVCX.podspec in Resources */,
 				D6F8FCA32248EBF0001636F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
