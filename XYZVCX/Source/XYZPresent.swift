@@ -12,6 +12,28 @@ import UIKit
 class XYZPresent: NSObject {}
 
 
+public func setRootVCTo(VCID:String,StoryboardName:String ,bundle:Bundle? = nil) {
+    let Scene = UIApplication.shared.connectedScenes.filter { (XYZScene) -> Bool in
+       return XYZScene.activationState == .foregroundActive
+    }.first as? UIWindowScene
+    let windowx = Scene?.windows.first
+    windowx?.makeKey()
+    
+    guard let window = windowx ,window.isKeyWindow else {print("无window");return}
+    window.rootViewController = UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: VCID)
+    window.makeKeyAndVisible()
+}
+
+
+public func FromDelegateSetRootVCTo(window:UIWindow?,VCID:String,StoryboardName:String ,bundle:Bundle? = nil) {
+    window?.makeKey()
+    guard let windowx = window ,windowx.isKeyWindow else {print("无window");return}
+    windowx.rootViewController = UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: VCID)
+    windowx.makeKeyAndVisible()
+}
+
+
+
 public extension UIApplication {
     class var RootVC:UIViewController?{
         return getTopViewController()
