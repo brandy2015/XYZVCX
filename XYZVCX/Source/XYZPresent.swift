@@ -34,7 +34,26 @@ public func FromDelegateSetRootVCTo(window:UIWindow?,VCID:String,StoryboardName:
 
 
 
+extension NSObject{
+    
+    var XYZRootViewController :UIViewController?{
+        let GetKeyWindow = UIApplication.shared.connectedScenes.compactMap { (SceneX) -> UIScene? in
+            if SceneX.activationState == .foregroundActive{
+                return SceneX
+            }else{
+                return nil
+            }
+        }
+        guard let scenekEY = GetKeyWindow.first ,let KeyWindow = scenekEY as? UIWindowScene,let RootWindow = KeyWindow.windows.first ,let RootViewController = RootWindow.rootViewController else{return nil}
+        return RootViewController
+    }
+    
+}
+
+
 public extension UIApplication {
+    
+    
     class var RootVC:UIViewController?{
         return getTopViewController()
     }
@@ -98,14 +117,12 @@ public func XYZKeyPresent(With id:String,StoryboardName:String = "Main",bundle:B
             print("是正在显示的")
             i.rootViewController?.presentedViewController?.present(NAV, animated: true, completion: nil)
         }else{print("不是正在显示的")
-            if let KeywindowsX = UIApplication.shared.keyWindow,let KeyVC = KeywindowsX.rootViewController{
-                print("在这里")
-                KeyVC.PresentVC(With: id)
-            }
+            
+            let keyVC = UIView().XYZRootViewController
+            
+            keyVC?.PresentVC(With: id)
     }}
 }
-
-
 
 public func PresentShareView(VC:UIViewController,URLs:[URL],on View:UIView){
     let activityController = XYZShareActivityVC(URLs: URLs, on: View)
@@ -130,84 +147,3 @@ public func XYZShareActivityVC(URLs:[URL],on View:UIView) -> UIActivityViewContr
     activityController.popoverPresentationController?.sourceView = View
     return activityController
 }
-
-
-
-
-
-
-
-
-
-
-
-
-//public class XYZPresent: NSObject {
-//
-//}
-
-//extension NSObject {
-//
-//    public func VC(id:String?,StoryBoardName:String = "Main")  -> UIViewController? {
-//        if let id = id{
-//            return  UIStoryboard(name: StoryBoardName, bundle:nil).instantiateViewController(withIdentifier: id)
-//        }else{return nil}
-//    }
-//    public func UIVC(id:String?,StoryBoardName:String = "Main") -> UIViewController? {
-//        if let id = id{
-//            return  UIStoryboard(name: StoryBoardName, bundle:nil).instantiateViewController(withIdentifier: id)
-//        }else{ return nil}
-//    }
-//    public func PresentNAV(with VC:UIViewController,id:String?,StoryBoardName:String = "Main") {
-//        if let id = id{
-//            let NAV =  UIStoryboard(name: StoryBoardName, bundle:nil).instantiateViewController(withIdentifier: id)
-//            VC.present(NAV, animated: true, completion: nil)
-//        }
-//    }
-//}
-
-//public extension UIViewController {
-//
-//    public func PresentNAV(id:String?,StoryBoardName:String = "Main") {
-//
-//        if let id = id{
-//            let NAV =  UIStoryboard(name: StoryBoardName, bundle:nil).instantiateViewController(withIdentifier: id)
-//            self.present(NAV, animated: true, completion: nil)
-//        }
-//    }
-//
-//}
-
-
-
-
-//            let window = UIApplication.shared.keyWindow
-//
-//            window?.rootViewController = x
-//            window?.makeKeyAndVisible()
-//x.modalTransitionStyle = .crossDissolve
-
-
-
-
-
-
-//customizeAppearance()
-//let tabController = window!.rootViewController as! UITabBarController
-//if let tabViewControllers = tabController.viewControllers {
-//    // First tab
-//    var navController = tabViewControllers[0] as! UINavigationController
-//    let controller1 = navController.viewControllers.first as! CurrentLocationViewController
-//    controller1.managedObjectContext = managedObjectContext
-//    // Second tab
-//    navController = tabViewControllers[1] as! UINavigationController
-//    let controller2 = navController.viewControllers.first as! LocationsViewController
-//    controller2.managedObjectContext = managedObjectContext
-//    let _ = controller2.view
-//    // Third tab
-//    navController = tabViewControllers[2] as! UINavigationController
-//    let controller3 = navController.viewControllers.first as! MapViewController
-//    controller3.managedObjectContext = managedObjectContext
-//}
-//print(applicationDocumentsDirectory)
-//listenForFatalCoreDataNotifications()
