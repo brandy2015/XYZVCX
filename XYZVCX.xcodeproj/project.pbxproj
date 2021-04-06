@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D66A8C3C22A10BA400375126 /* XYZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A8C3B22A10BA400375126 /* XYZNavigationController.swift */; };
+		D6DA25DF260EAE0300AB2290 /* XYZOpenUIDocumentPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA25DE260EAE0300AB2290 /* XYZOpenUIDocumentPickerVC.swift */; };
 		D6EACA6723A0AA0C0060EB65 /* XYZVCX.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D6EACA6623A0AA0C0060EB65 /* XYZVCX.podspec */; };
 		D6F8FC9E2248EBF0001636F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F8FC9D2248EBF0001636F7 /* AppDelegate.swift */; };
 		D6F8FCA02248EBF0001636F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F8FC9F2248EBF0001636F7 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		6B54310D7A4B3916135F8203 /* Pods_XYZVCX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYZVCX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		878BCFAAF742D38E5900E04E /* Pods-XYZVCX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZVCX.debug.xcconfig"; path = "Target Support Files/Pods-XYZVCX/Pods-XYZVCX.debug.xcconfig"; sourceTree = "<group>"; };
 		D66A8C3B22A10BA400375126 /* XYZNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZNavigationController.swift; sourceTree = "<group>"; };
+		D6DA25DE260EAE0300AB2290 /* XYZOpenUIDocumentPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZOpenUIDocumentPickerVC.swift; sourceTree = "<group>"; };
 		D6EACA6623A0AA0C0060EB65 /* XYZVCX.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XYZVCX.podspec; sourceTree = "<group>"; };
 		D6F8FC9A2248EBF0001636F7 /* XYZVCX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYZVCX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F8FC9D2248EBF0001636F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				D6F8FCB62248ED04001636F7 /* XYZPresent.swift */,
 				D66A8C3B22A10BA400375126 /* XYZNavigationController.swift */,
+				D6DA25DE260EAE0300AB2290 /* XYZOpenUIDocumentPickerVC.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6F8FCB72248ED04001636F7 /* XYZPresent.swift in Sources */,
+				D6DA25DF260EAE0300AB2290 /* XYZOpenUIDocumentPickerVC.swift in Sources */,
 				D6F8FCA02248EBF0001636F7 /* ViewController.swift in Sources */,
 				D6F8FC9E2248EBF0001636F7 /* AppDelegate.swift in Sources */,
 				D66A8C3C22A10BA400375126 /* XYZNavigationController.swift in Sources */,
