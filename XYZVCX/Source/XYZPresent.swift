@@ -106,6 +106,16 @@ public extension UIViewController {
     
 }
 
+public extension UIViewController{
+    
+    func PresentNavcBack_vc<T:UIViewController>(With Classx:T,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve,completion: (() -> Void)? = nil ,BackVC:@escaping ((T) -> Void))  {
+        guard let NAV = UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: "\(Classx.classForCoder)") as? UINavigationController,let vcx = NAV.children.first as? T else{return};BackVC(vcx)
+      NAV.modalPresentationStyle = PresentStyle
+      NAV.modalTransitionStyle = TransitionStyle
+      DispatchQueue.main.async {self.present(NAV, animated: true, completion: completion)}
+    }
+}
+
 
 public func XYZKeyPresent(With id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve) {
     let NAV =  UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: id)
