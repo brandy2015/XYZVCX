@@ -106,15 +106,15 @@ public extension UIViewController {
     
 }
 
-public extension UIViewController{
-    
-    func PresentNavcBack_vc<T:UIViewController>(With Classx:T,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve,completion: (() -> Void)? = nil ,BackVC:@escaping ((T) -> Void))  {
-        guard let NAV = UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: "\(Classx.classForCoder)") as? UINavigationController,let vcx = NAV.children.first as? T else{return};BackVC(vcx)
-      NAV.modalPresentationStyle = PresentStyle
-      NAV.modalTransitionStyle = TransitionStyle
-      DispatchQueue.main.async {self.present(NAV, animated: true, completion: completion)}
-    }
-}
+//public extension UIViewController{
+//
+//    func PresentNavcBack_vc<T:UIViewController>(With Classx:T,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve,completion: (() -> Void)? = nil ,BackVC:@escaping ((T) -> Void))  {
+//        guard let NAV = UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: "\(Classx.classForCoder)") as? UINavigationController,let vcx = NAV.children.first as? T else{return};BackVC(vcx)
+//      NAV.modalPresentationStyle = PresentStyle
+//      NAV.modalTransitionStyle = TransitionStyle
+//      DispatchQueue.main.async {self.present(NAV, animated: true, completion: completion)}
+//    }
+//}
 
 
 public func XYZKeyPresent(With id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve) {
@@ -133,12 +133,12 @@ public func XYZKeyPresent(With id:String,StoryboardName:String = "Main",bundle:B
             keyVC?.PresentVC(With: id)
     }}
 }
-
-public func PresentShareView(VC:UIViewController,URLs:[URL],on View:UIView){
-    let activityController = XYZShareActivityVC(URLs: URLs, on: View)
-    activityController.modalPresentationStyle = .fullScreen
-    VC.present(activityController, animated: true, completion: nil)
-}
+//
+//public func PresentShareView(VC:UIViewController,URLs:[URL],on View:UIView){
+//    let activityController = XYZShareActivityVC(URLs: URLs, on: View)
+//    activityController.modalPresentationStyle = .fullScreen
+//    VC.present(activityController, animated: true, completion: nil)
+//}
 
 public extension UIViewController{
     func PresentShareView(URLs:[URL]){
@@ -157,3 +157,15 @@ public func XYZShareActivityVC(URLs:[URL],on View:UIView) -> UIActivityViewContr
     activityController.popoverPresentationController?.sourceView = View
     return activityController
 }
+
+
+public func setRootVCToXX(VCID:String,StoryboardName:String ,bundle:Bundle? = nil) {
+    let Scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+    let windowx = Scene?.windows.first
+    windowx?.makeKey()
+    windowx?.makeKeyAndVisible()
+    guard let window = windowx ,window.isKeyWindow else {print("无window");return}
+    window.rootViewController = UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: VCID)
+    window.makeKeyAndVisible()
+}
+ 
