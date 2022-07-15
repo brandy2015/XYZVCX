@@ -34,7 +34,7 @@ public func FromDelegateSetRootVCTo(window:UIWindow?,VCID:String,StoryboardName:
 
 
 
-extension NSObject{
+public extension NSObject{
     
     var XYZRootViewController :UIViewController?{
         let GetKeyWindow = UIApplication.shared.connectedScenes.compactMap { (SceneX) -> UIScene? in
@@ -82,6 +82,16 @@ public extension UIApplication {
 
 public extension UIViewController {
     func Dis()  {  DispatchQueue.main.async {self.dismiss(animated: true, completion: nil)}}
+    
+//    func PresentVCWithThisVC(With id:String,bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve) {
+//        let NAV = UIStoryboard(name: self.restorationIdentifier ?? "", bundle:nil).instantiateViewController(withIdentifier: id)
+//        NAV.modalPresentationStyle = PresentStyle
+//        NAV.modalTransitionStyle = TransitionStyle
+//        DispatchQueue.main.async {self.present(NAV, animated: true, completion: nil)}
+//    }
+    
+    
+    
     
     func PresentVC(With id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve) {
         let NAV = UIStoryboard(name: StoryboardName, bundle:nil).instantiateViewController(withIdentifier: id)

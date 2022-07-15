@@ -10,23 +10,21 @@ import UIKit
 
 //XYZVCX_Extension
 //OpenUIDocPic
+
+public enum XYZFileType {
+    case Music,Picture,Video,PDF,ZIP,LMR
+}
 public extension UIViewController{
-    enum XYZFileType {
-        case Music,Picture,Video,PDF,ZIP,LMR
-    }
+    
     func OpenUIDocPic(fileType:XYZFileType,delegate:UIDocumentPickerDelegate){
         var documentTypes = [""]
         
         switch fileType {
-        case .Music:
-            print("Music格式")
-            documentTypes = ["public.audio"]
-            
+        case .Music: print("Music格式")
+            documentTypes = ["public.audio"] 
         case .Picture:
             print("Picture格式")
             documentTypes = ["public.image"]
-        
-        
         case .Video:
             print("Video 格式")
             documentTypes = ["public.movie"]

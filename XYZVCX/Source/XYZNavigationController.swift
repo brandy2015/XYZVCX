@@ -7,15 +7,11 @@
 //
 
 import UIKit
-
-class XYZNavigationController: NSObject {
-
-}
-
-
+ 
 //属性
 
 public extension UIViewController {
+    
     func Navc的透明效果(titleColor:UIColor = .white,font:UIFont = UIFont(name: "Avenir Next", size: 25.0)!)  {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
