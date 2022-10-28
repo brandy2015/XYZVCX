@@ -82,17 +82,7 @@ public extension UIApplication {
 
 public extension UIViewController {
     func Dis()  {  DispatchQueue.main.async {self.dismiss(animated: true, completion: nil)}}
-    
-//    func PresentVCWithThisVC(With id:String,bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve) {
-//        let NAV = UIStoryboard(name: self.restorationIdentifier ?? "", bundle:nil).instantiateViewController(withIdentifier: id)
-//        NAV.modalPresentationStyle = PresentStyle
-//        NAV.modalTransitionStyle = TransitionStyle
-//        DispatchQueue.main.async {self.present(NAV, animated: true, completion: nil)}
-//    }
-    
-    
-    
-    
+     
     func PresentVC(With id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve) {
         let NAV = UIStoryboard(name: StoryboardName, bundle:nil).instantiateViewController(withIdentifier: id)
         NAV.modalPresentationStyle = PresentStyle
@@ -107,25 +97,37 @@ public extension UIViewController {
         DispatchQueue.main.async {VC.present(NAV, animated: true, completion: nil)}
     }
     
-      func PresentVCBack(With id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve,completion: (() -> Void)? = nil ,BackVC:@escaping ((UIViewController?) -> Void))  {
+      func PresentVCBackNew(With id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve,completion: (() -> Void)? = nil ,BackVC:@escaping ((UIViewController?) -> Void))  {
         let NAV = UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: id);BackVC(NAV)
         NAV.modalPresentationStyle = PresentStyle
         NAV.modalTransitionStyle = TransitionStyle
         DispatchQueue.main.async {self.present(NAV, animated: true, completion: completion)}
     }
     
+    func PresentVCBack(With id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve,completion: (() -> Void)? = nil ,BackVC:@escaping ((UIViewController?) -> Void))  {
+        let NAV = UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: id);
+        NAV.modalPresentationStyle = PresentStyle
+        NAV.modalTransitionStyle = TransitionStyle
+        DispatchQueue.main.async {
+            self.present(NAV, animated: true) {
+                BackVC(NAV)
+            }
+            
+        }
+    }
+    
+    func BackVC(With id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve,completion: (() -> Void)? = nil ,BackVC:@escaping ((UIViewController?) -> Void))  {
+        let NAV = UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: id);BackVC(NAV)
+        NAV.modalPresentationStyle = PresentStyle
+        NAV.modalTransitionStyle = TransitionStyle
+        DispatchQueue.main.async {
+            self.present(NAV, animated: true) {
+                
+            }
+            
+        }
+    }
 }
-
-//public extension UIViewController{
-//
-//    func PresentNavcBack_vc<T:UIViewController>(With Classx:T,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve,completion: (() -> Void)? = nil ,BackVC:@escaping ((T) -> Void))  {
-//        guard let NAV = UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: "\(Classx.classForCoder)") as? UINavigationController,let vcx = NAV.children.first as? T else{return};BackVC(vcx)
-//      NAV.modalPresentationStyle = PresentStyle
-//      NAV.modalTransitionStyle = TransitionStyle
-//      DispatchQueue.main.async {self.present(NAV, animated: true, completion: completion)}
-//    }
-//}
-
 
 public func XYZKeyPresent(With id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve) {
     let NAV =  UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: id)
@@ -150,23 +152,6 @@ public func XYZKeyPresent(With id:String,StoryboardName:String = "Main",bundle:B
 //    VC.present(activityController, animated: true, completion: nil)
 //}
 
-public extension UIViewController{
-    func PresentShareView(URLs:[URL]){
-        let activityController = XYZShareActivityVC(URLs: URLs, on: self.view)
-        activityController.modalPresentationStyle = .fullScreen
-        self.present(activityController, animated: true, completion: nil)
-    }
-}
-
-public func XYZShareActivityVC(URLs:[URL],on View:UIView) -> UIActivityViewController{
-    //    let fileURL = 文件地址
-    let activityController = UIActivityViewController(activityItems: URLs, applicationActivities: nil)
-    let excludedActivities = [UIActivity.ActivityType.postToFlickr, UIActivity.ActivityType.postToWeibo, UIActivity.ActivityType.message, UIActivity.ActivityType.mail, UIActivity.ActivityType.print, UIActivity.ActivityType.copyToPasteboard, UIActivity.ActivityType.assignToContact, UIActivity.ActivityType.saveToCameraRoll, UIActivity.ActivityType.addToReadingList, UIActivity.ActivityType.postToFlickr, UIActivity.ActivityType.postToVimeo, UIActivity.ActivityType.postToTencentWeibo]
-    activityController.excludedActivityTypes = excludedActivities
-    activityController.popoverPresentationController?.sourceRect = CGRect(x: 4.0, y: 0.0, width: 1.0, height: 1.0)
-    activityController.popoverPresentationController?.sourceView = View
-    return activityController
-}
 
 
 public func setRootVCToXX(VCID:String,StoryboardName:String ,bundle:Bundle? = nil) {
