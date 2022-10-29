@@ -12,7 +12,7 @@ import UIKit
 //OpenUIDocPic
 
 public enum XYZFileType {
-    case Music,Picture,Video,PDF,ZIP,LMR
+    case Music,Picture,Video,PDF,ZIP,LMR,Office
 }
 public extension UIViewController{
     
@@ -21,7 +21,7 @@ public extension UIViewController{
         
         switch fileType {
         case .Music: print("Music格式")
-            documentTypes = ["public.audio"] 
+            documentTypes = ["public.audio"]
         case .Picture:
             print("Picture格式")
             documentTypes = ["public.image"]
@@ -38,6 +38,9 @@ public extension UIViewController{
             print("LMR 格式")
             documentTypes = ["com.pkware.zip-archive","org.gnu.gnu-zip-archive","org.gnu.gnu-zip-tar-archive","public.archive","public.zip-archive","com.rarlab.rar-archive","com.rarlab-rar-archive","public.item"]
 //        default: print("未知格式")
+            case .Office:
+                print("LMR 格式")
+                documentTypes = ["public.content","public.text","public.source-code","public.image","public.audiovisual-content","com.adobe.pdf","com.apple.keynote.key","com.microsoft.word.doc","com.microsoft.excel.xls","com.microsoft.powerpoint.ppt"]
         }
         
         
