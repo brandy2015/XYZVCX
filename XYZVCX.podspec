@@ -1,4 +1,4 @@
-#
+#pod trunk push --allow-warnings
 #  Be sure to run `pod spec lint XYZVCX.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XYZVCX"
-  s.version      = "3.0.9"
+  s.version      = "3.1.1"
   s.summary      = "持续升级"
 
   # This description is used to generate tags and improve search results.
@@ -58,7 +58,7 @@ Pod::Spec.new do |s|
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
   s.platform     = :ios, "13.0"
-  s.source       = { :git => "https://github.com/brandy2015/XYZVCX.git", :tag => "3.0.9"}
+  s.source       = { :git => "https://github.com/brandy2015/XYZVCX.git", :tag => "3.1.1"}
   s.source_files = "XYZVCX/Source/*"
 
   # s.social_media_url   = "http://twitter.com/Brandy"

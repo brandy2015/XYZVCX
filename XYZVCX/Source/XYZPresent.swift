@@ -83,6 +83,8 @@ public extension UIApplication {
 public extension UIViewController {
     func Dis()  {  DispatchQueue.main.async {self.dismiss(animated: true, completion: nil)}}
      
+    
+    @available(*, deprecated, message: "这个方法将在未来版本中被修改或移除，请谨慎使用。")
     func PresentVC(With id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve) {
         let NAV = UIStoryboard(name: StoryboardName, bundle:nil).instantiateViewController(withIdentifier: id)
         NAV.modalPresentationStyle = PresentStyle
@@ -90,6 +92,7 @@ public extension UIViewController {
         DispatchQueue.main.async {self.present(NAV, animated: true, completion: nil)}
     }
     
+    @available(*, deprecated, message: "这个方法将在未来版本中被修改或移除，请谨慎使用。")
     func PresentWith(With VC:UIViewController,id:String,StoryboardName:String = "Main",bundle:Bundle? = nil,PresentStyle:UIModalPresentationStyle = .fullScreen,TransitionStyle:UIModalTransitionStyle = .crossDissolve) {
         let NAV = UIStoryboard(name: StoryboardName, bundle:bundle).instantiateViewController(withIdentifier: id)
         NAV.modalPresentationStyle = PresentStyle
