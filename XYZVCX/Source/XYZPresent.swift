@@ -164,3 +164,28 @@ public func setRootVCToXX(VCID:String,StoryboardName:String ,bundle:Bundle? = ni
     window.makeKeyAndVisible()
 }
  
+
+
+
+
+
+
+
+import UIKit
+
+public extension UIViewController {
+    func PresentVCWithT<T: UIViewController>(StroryBoardName:String = "Main",With viewControllerClass: T.Type, PresentStyle: UIModalPresentationStyle = .automatic, TransitionStyle: UIModalTransitionStyle = .coverVertical, configuration: ((T) -> Void)? = nil) {
+        // 创建视图控制器实例
+        let viewController = UIStoryboard(name: StroryBoardName, bundle: self.nibBundle).instantiateViewController(withIdentifier: "\(viewControllerClass.self)") as! T
+        
+        // 调用配置闭包（如果有的话）
+        configuration?(viewController)
+        
+        // 设置展示样式
+        viewController.modalPresentationStyle = PresentStyle
+        viewController.modalTransitionStyle = TransitionStyle
+        
+        // 展示视图控制器
+        self.present(viewController, animated: true, completion: nil)
+    }
+}
