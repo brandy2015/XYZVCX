@@ -177,7 +177,7 @@ public func setRootVCToXX(VCID:String,StoryboardName:String ,bundle:Bundle? = ni
 import UIKit
 
 public extension UIViewController {
-    func PresentVCWithT<T: UIViewController>(StroryBoardName:String = "Main",With viewControllerClass: T.Type, PresentStyle: UIModalPresentationStyle = .automatic, TransitionStyle: UIModalTransitionStyle = .coverVertical, configuration: ((T) -> Void)? = nil) {
+    func PresentVCWithT<T: UIViewController>(StroryBoardName:String = "Main",With viewControllerClass: T.Type, PresentStyle: UIModalPresentationStyle = .fullScreen, TransitionStyle: UIModalTransitionStyle = .coverVertical, configuration: ((T) -> Void)? = nil) {
         // 创建视图控制器实例
         let viewController = UIStoryboard(name: StroryBoardName, bundle: self.nibBundle).instantiateViewController(withIdentifier: "\(viewControllerClass.self)") as! T
         
