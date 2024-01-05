@@ -1,6 +1,6 @@
 //
 //  XYZPresent.swift
-//  XYZManager
+//  XYZVCX
 //
 //  Created by 张子豪 on 2019/2/17.
 //  Copyright © 2019 张子豪. All rights reserved.
@@ -183,6 +183,27 @@ public extension UIViewController {
         
         // 调用配置闭包（如果有的话）
         configuration?(viewController)
+        
+        // 设置展示样式
+        viewController.modalPresentationStyle = PresentStyle
+        viewController.modalTransitionStyle = TransitionStyle
+        
+        // 展示视图控制器
+        self.present(viewController, animated: true, completion: nil)
+    }
+}
+
+
+
+import UIKit
+
+public extension UIViewController {
+    func PresentVCWithTNavi<T: UIViewController>(withID:String,StroryBoardName:String = "Main",With viewControllerClass: T.Type, PresentStyle: UIModalPresentationStyle = .fullScreen, TransitionStyle: UIModalTransitionStyle = .coverVertical, configuration: ((T) -> Void)? = nil) {
+        // 创建视图控制器实例
+        let viewController = UIStoryboard(name: StroryBoardName, bundle: self.nibBundle).instantiateViewController(withIdentifier: "\(withID.self)") as! UINavigationController
+        
+        // 调用配置闭包（如果有的话）
+        configuration?(viewController.children.first as! T)
         
         // 设置展示样式
         viewController.modalPresentationStyle = PresentStyle
